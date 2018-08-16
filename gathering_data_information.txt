@@ -1,0 +1,23 @@
+The first two would be get from sunpy queries, but it seems the vso client has some instability and it could not be done. The other 2 are get from the noaa warehouse.
+
+- Magnetogram:
+    Original: hmi.sharp_720s e hmi.sharp_720s_nrt http://jsoc.stanford.edu/ajax/lookdata.html?ds=hmi.M_720s
+
+    https://sdac.virtualsolar.org/cgi/show_details?instrument=HMI
+
+    hmi.sharp_720s -> physobs = LOS_magnetic_field
+
+    hmi.sharp_720s_nrt -> physobs = vector_magnetic_field
+
+
+- X-Rays
+    Original: https://satdat.ngdc.noaa.gov/sem/goes/data/new_avg/   - Exemplo: https://satdat.ngdc.noaa.gov/sem/goes/data/new_avg/2018/04/goes15/csv/
+
+    https://sdac.virtualsolar.org/cgi/show_details?instrument=SXI-0 (currently there is problem connecting to NGDC data from the VSO website, let alone the API), it could also be https://sdac.virtualsolar.org/cgi/show_details?instrument=AIA in the spectrum of 94 angstrom.
+
+
+- Event Report
+  Original: ftp://ftp.swpc.noaa.gov/pub/warehouse/
+
+- Region Report
+  Original: ftp://ftp.swpc.noaa.gov/pub/warehouse/2018/SRS/
